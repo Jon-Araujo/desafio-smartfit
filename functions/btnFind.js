@@ -9,11 +9,11 @@ async function findUnitsCloseOrOpen() {
 
     for (let i = 0; i < listUnits.locations.length; i++) {
         let situation = listUnits.locations[i].opened === true ? "Aberto" : "Fechado";
-        let mask = listUnits.locations[i].mask === "required" ? "../src/assets/images/required-mask.png" : "../src/assets/images/recommended-mask.png";
-        let towel = listUnits.locations[i].towel === "required" ? "../src/assets/images/required-towel.png" : "../src/assets/images/recommended-towel.png";
-        let fountain = listUnits.locations[i].fountain === "not_allowed" ? "../src/assets/images/forbidden-fountain.png" : "../src/assets/images/partial-fountain.png"
-        let lockerroom = listUnits.locations[i].locker_room === "allowed" ? "../src/assets/images/required-lockerroom.png"
-            : listUnits.locations[i].locker_room === "partial" ? "../src/assets/images/partial-lockerroom.png" : "../src/assets/images/forbidden-lockerroom.png";
+        let mask = listUnits.locations[i].mask === "required" ? "../assets/images/required-mask.png" : "../assets/images/recommended-mask.png";
+        let towel = listUnits.locations[i].towel === "required" ? "../assets/images/required-towel.png" : "../assets/images/recommended-towel.png";
+        let fountain = listUnits.locations[i].fountain === "not_allowed" ? "../assets/images/forbidden-fountain.png" : "../assets/images/partial-fountain.png"
+        let lockerroom = listUnits.locations[i].locker_room === "allowed" ? "../assets/images/required-lockerroom.png"
+            : listUnits.locations[i].locker_room === "partial" ? "../assets/images/partial-lockerroom.png" : "../assets/images/forbidden-lockerroom.png";
 
         if (closeUnits.checked === false) {
             if (situation === "Aberto") {
@@ -189,11 +189,11 @@ async function findUnitsByPeriod() {
 
     for (let i = 0; i < listUnits.locations.length; i++) {
         let situation = listUnits.locations[i].opened === true ? "Aberto" : "Fechado";
-        let mask = listUnits.locations[i].mask === "required" ? "../src/assets/images/required-mask.png" : "../src/assets/images/recommended-mask.png";
-        let towel = listUnits.locations[i].towel === "required" ? "../src/assets/images/required-towel.png" : "../src/assets/images/recommended-towel.png";
-        let fountain = listUnits.locations[i].fountain === "not_allowed" ? "../src/assets/images/forbidden-fountain.png" : "../src/assets/images/partial-fountain.png"
-        let lockerroom = listUnits.locations[i].locker_room === "allowed" ? "../src/assets/images/required-lockerroom.png"
-            : listUnits.locations[i].locker_room === "partial" ? "../src/assets/images/partial-lockerroom.png" : "../src/assets/images/forbidden-lockerroom.png";
+        let mask = listUnits.locations[i].mask === "required" ? "../assets/images/required-mask.png" : "../assets/images/recommended-mask.png";
+        let towel = listUnits.locations[i].towel === "required" ? "../assets/images/required-towel.png" : "../assets/images/recommended-towel.png";
+        let fountain = listUnits.locations[i].fountain === "not_allowed" ? "../assets/images/forbidden-fountain.png" : "../assets/images/partial-fountain.png"
+        let lockerroom = listUnits.locations[i].locker_room === "allowed" ? "../assets/images/required-lockerroom.png"
+            : listUnits.locations[i].locker_room === "partial" ? "../assets/images/partial-lockerroom.png" : "../assets/images/forbidden-lockerroom.png";
         let splitHour = listUnits.locations[i].schedules[0].hour.split(" ");
         let hourJson = listUnits.locations[i].schedules[0].hour;
 
