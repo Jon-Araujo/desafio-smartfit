@@ -1,0 +1,89 @@
+.list-results {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0;
+}
+
+.results-card {
+    margin-bottom: 2rem;
+    background-color: var(--light-grey);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px;
+    width: 90%;
+}
+
+.card-situation {
+    font-family: 'gotham-black', sans-serif;
+    color: var(--green);
+}
+
+.results-card h3 {
+    font-size: 1.8rem;
+    font-family: 'gotham-bold', sans-serif;
+    margin: 1rem 0;
+}
+
+.results-card>h3+p {
+    font-family: 'gotham-light', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+
+.card-images img {
+    width: 24%;
+    padding: 1rem 0;
+}
+
+.card-time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.group-time {
+    width: 50%;
+}
+
+.card-time h5 {
+    font-family: 'gotham-bold', sans-serif;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.card-time p {
+    margin: 1.5rem 0;
+    width: 80%;
+    font-family: 'gotham-book', sans-serif;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width:667px) and (max-width:1023px) {
+    .list-results {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .list-results {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .results-card {
+        width: 90%;
+    }
+
+    .results-card>h3+p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        height: 3rem;
+    }
+
+    .card-images {
+        margin: 1rem 0;
+    }
+}
