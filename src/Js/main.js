@@ -1,5 +1,5 @@
-import formClear from "./functions/formClear.js";
-import { findUnitsCloseOrOpen, findUnitsByPeriod } from "./functions/btnFind.js";
+import formClear from "./formClear.js";
+import { findUnitsCloseOrOpen, findUnitsByPeriod } from "./btnFind.js";
 
 const btnClear = document.getElementById('btn-clear');
 btnClear.addEventListener("click", formClear);
