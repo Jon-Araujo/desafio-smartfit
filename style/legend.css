@@ -1,0 +1,47 @@
+#legend {
+    padding: 2rem 0;
+    background-color: var(--light-grey);
+}
+
+.legend-title {
+    font-size: 1.3rem;
+    font-family: 'gotham-black', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 4rem 0 2rem;
+}
+
+.legend-topic {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.legend-item {
+    text-align: center;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.legend-item>img {
+    width: 70px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.legend-item>p {
+    margin-top: 0.6rem;
+    font-family: 'gotham-book', sans-serif;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width:1024px) {
+    #legend {
+        display: flex;
+    }
+
+    .legend-title {
+        margin: 1rem 0;
+    }
+}
